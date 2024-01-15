@@ -12,3 +12,9 @@
    transition-duration: 2000ms; /* Durée de la transition, ajustez selon vos préférences */
    transition-timing-function: ease-in-out; /* Fonction de transition, ajustez selon vos préférences */
 }
+
+@media screen and (max-width: 425px) {
+   .new-bg {
+      background-image: url("../images/bg-img-home.png");
+   }
+}

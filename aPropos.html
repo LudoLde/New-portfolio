@@ -11,9 +11,9 @@
          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat+Alternates:wght@100;300;400;700&display=swap"
          rel="stylesheet" />
       <script src="https://kit.fontawesome.com/e8b029d396.js" crossorigin="anonymous"></script>
-      <title>Portfolio</title>
+      <title>À propos</title>
    </head>
-   <body class="bg-cover bg-no-repeat absolute font-lato" style="background-image: url('./images/a-propos-background.jpg')">
+   <body class="bg-cover bg-no-repeat font-lato" style="background-image: url('./images/a-propos-background.jpg')">
       <header class="p-3">
          <a href="./index.html" class="text-white">
             <i class="fa-solid fa-l ml-4 mt-2" style="font-size: 30px"></i
@@ -21,34 +21,41 @@
          </a>
       </header>
       <main>
-         <section class="text-white w-5/6 ml-6 mt-10">
-            <h1 class="font-montserrat text-4xl">À propos de moi :</h1>
-            <p class="mt-10 text-lg w-4/6 leading-8">
+         <section class="text-white w-5/6 ml-6 mt-10 tablet:w-[95%]">
+            <h1 class="font-montserrat text-4xl tablet:text-3xl mobile:text-2xl">À propos de moi :</h1>
+            <p class="mt-10 text-lg w-4/6 leading-8 tablet:w-[90%] mobile:w-[92%] mobile:text-center mobile:text-base mobile:leading-7">
                Je me présente, Ludovic Labaude et j'exerce le métier de développeur front-end. En effet j'ai effectué une reconversion
-               professionnelle après avoir travaillé durant 9 ans dans une société de téléphonie nommée Paritel. Cette formation a été
-               réalisé via la plateforme OpenClassRooms pendant une durée de 9 mois et m'a permis d'acquérir de nombreuses compétences
+               professionnelle après avoir travaillé durant 8 ans dans une société de téléphonie nommée Paritel. Cette formation a été
+               réalisé via la plateforme OpenClassRooms pendant une durée de 12 mois et m'a permis d'acquérir de nombreuses compétences
                permettant la création de sites web complets.
             </p>
-            <div>
-               <h2 class="font-montserrat text-4xl mt-28 mb-12">Mes skills :</h2>
-               <div class="text-white flex gap-12">
-                  <p class="text-orange-500 text-3xl">HTML <i class="fa-brands fa-html5 ml-1"></i></p>
-                  <p class="text-blue-600 text-3xl">CSS <i class="fa-brands fa-css3-alt ml-1"></i></p>
-                  <p class="text-yellow-300 text-3xl">JAVASCRIPT <i class="fa-brands fa-square-js ml-1"></i></p>
-                  <p class="text-blue-400 text-3xl">REACT <i class="fa-brands fa-react ml-1"></i></p>
-                  <p class="text-cyan-500 text-3xl">TAILWIND CSS <img src="./images/tailwind.png" class="float-right w-12" /></p>
+            <div id="skills" class="opacity-0">
+               <h2 class="font-montserrat text-4xl mt-28 mb-12 tablet:text-3xl mobile:text-2xl">Mes skills :</h2>
+               <div class="text-white flex gap-12 tablet:gap-8 mobile:gap-6 mobile:flex-wrap mobile:justify-center">
+                  <p class="text-orange-500 text-2xl tablet:text-xl mobile:text-base">HTML <i class="fa-brands fa-html5 ml-1"></i></p>
+                  <p class="text-blue-600 text-2xl tablet:text-xl mobile:text-base">CSS <i class="fa-brands fa-css3-alt ml-1"></i></p>
+                  <p class="text-yellow-300 text-2xl tablet:text-xl mobile:text-base">
+                     JAVASCRIPT <i class="fa-brands fa-square-js ml-1"></i>
+                  </p>
+                  <p class="text-blue-400 text-2xl tablet:text-xl mobile:text-base">REACT <i class="fa-brands fa-react ml-1"></i></p>
+                  <p class="text-cyan-500 text-2xl tablet:text-xl mobile:text-base">
+                     TAILWIND CSS <img src="./images/tailwind.png" class="float-right w-12 tablet::w-8 mobile:w-7" />
+                  </p>
                </div>
             </div>
          </section>
       </main>
-      <footer class="flex justify-center w-[185px] flex-wrap mt-14 mr-[4px] ml-auto">
+      <footer class="flex justify-center w-[185px] flex-wrap mt-14 mr-[4px] ml-auto mobile:mr-auto mobile:mb-4">
          <a
             href="https://github.com/"
-            class="flex items-center justify-center w-8 h-8 border-e-2 border-s-2 border-white rounded-full focus:outline-none focus:border-gray-300 transition duration-300 mr-3 text-center">
+            class="flex items-center justify-center w-8 h-8 border-e-2 border-s-2 border-white rounded-full focus:outline-none focus:border-gray-300 transition duration-300 mr-3 text-center mobile:w-6 mobile:h-6">
             <i class="fa-brands fa-github text-white"></i>
          </a>
-         <p class="text-white text-xs pt-2"><i class="fa-solid fa-mobile pr-2"></i>06.67.99.13.84</p>
-         <p class="text-white text-[9px] mt-1"><i class="fa-regular fa-copyright"></i>Ludovic Labaude tout droits réservés 2024</p>
+         <p class="text-white text-xs pt-2 mobile:text-[10px]"><i class="fa-solid fa-mobile pr-2"></i>06.67.99.13.84</p>
+         <p class="text-white text-[9px] mt-1 mobile:text-[7px]">
+            <i class="fa-regular fa-copyright"></i>Ludovic Labaude tout droits réservés 2024
+         </p>
       </footer>
+      <script src="index.js"></script>
    </body>
 </html>
